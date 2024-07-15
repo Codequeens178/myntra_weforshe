@@ -16,10 +16,16 @@ This project aims to predict future fashion trends by analyzing Instagram posts.
 The repository contains several directories:
 
 data: This directory contains all the datasets, including the raw and cleaned versions.
+
 models: This directory contains the machine learning models' weights, excluding the large SAM model which is not included in the repo due to its size.
+
 research: This directory contains two Jupyter notebooks that were used to decide the number of clusters and train the autoencoder.
+
 images: This directory contains two subdirectories - "original_images" and "segmented_images" which hold the original and segmented images respectively.
-python scripts: These are a series of Python files responsible for different steps in the pipeline. The order of execution is as follows:
+
+python scripts: These are a series of Python files responsible for different steps in the pipeline. 
+
+The order of execution is as follows:
 data_preprocessing.py
 download_images.py
 image_segmentation.py
