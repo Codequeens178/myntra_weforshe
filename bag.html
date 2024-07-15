@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .header img {
+            width: 100px;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .steps div {
+            flex: 1;
+            text-align: center;
+            font-size: 18px;
+        }
+        .offer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .cart-items, .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .cart-items {
+            width: 60%;
+        }
+        .sidebar {
+            width: 35%;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .cart-item img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .cart-item-details {
+            flex: 1;
+        }
+        .cart-item-actions {
+            text-align: right;
+        }
+        .cart-item-actions a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #e53935;
+        }
+        .price-details, .donate-section {
+            margin-bottom: 20px;
+        }
+        .price-details div, .donate-section div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .donate-buttons button {
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .total-amount {
+            font-size: 24px;
+            text-align: right;
+        }
+        .place-order {
+            background-color: #ff4081;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/images/unnamed.jpg" alt="Myntra Logo">
+            <div style="color: #4b991b;">100% SECURE</div>
+        </div>
+        <div class="steps" style="margin-left: 300px; margin-right: 300px;">
+            <div style="color: grey;">BAG</div>
+            <div style="color: grey;">ADDRESS</div>
+            <div style="color: grey;">PAYMENT</div>
+        </div>
+        <div class="offer">
+            <div id="offer-timer">Offer Ends In <span id="time">12:47:10</span></div>
+        </div>
+        <div class="main-content">
+            <div class="cart-items">
+                <div class="offer">
+                    <div>Check delivery time & services</div>
+                    <button>ENTER PIN CODE</button>
+                </div>
+                <div class="offer">
+                    <div>Available Offers</div>
+                    <div>10% Instant Discount upto ₹1000 on Kotak Bank Cards on a min spend of ₹3,000. TCA</div>
+                </div>
+                <div>
+                    <h3>1/1 ITEMS SELECTED</h3>
+                </div>
+                <div class="cart-item">
+                    <input type="checkbox" checked>
+                    <img src="assets/images/wishlist_p3.png" alt="Product Image">
+                    <div class="cart-item-details">
+                        <div>Chemistry</div>
+                        <div>V-Neck Cut Out Playsuit</div>
+                        <div>Size: S</div>
+                        <div>Qty: 1</div>
+                        <div>₹958 <span style="text-decoration: line-through;">₹2,995</span> <span style="color: green;">68% OFF</span></div>
+                        <div>14 days return available</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <a href="#">REMOVE</a>
+                        <a href="#">MOVE TO WISHLIST</a>
+                    </div>
+                </div>
+                <a href="wishlist.html"><button> Add More From Wishlist</button></a>
+            </div>
+            <div class="sidebar">
+                <div class="donate-section">
+                    <div>SUPPORT TRANSFORMATIVE SOCIAL WORK IN INDIA</div>
+                    <div>Donate and make a difference</div>
+                    <div class="donate-buttons">
+                        <button>₹10</button>
+                        <button>₹20</button>
+                        <button>₹50</button>
+                        <button>₹100</button>
+                    </div>
+                </div>
+                <div class="price-details">
+                    <div><span>Total MRP</span><span>₹2,995</span></div>
+                    <div><span>Discount on MRP</span><span style="color: red;">- ₹2,037</span></div>
+                    <div><span>Coupon Discount</span><span><a href="#">Apply Coupon</a></span></div>
+                    <div><span>Platform Fee</span><span style="color: green;">FREE</span></div>
+                    <div><span>Shipping Fee</span><span style="color: green;">FREE</span></div>
+                </div>
+                <div class="total-amount">
+                    <div>Total Amount</div>
+                    <div>₹958</div>
+                </div>
+                <a class="place-order" href="#">PLACE ORDER</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Countdown timer
+        function startCountdown(duration, display) {
+            var timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = hours + ":" + minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var twelveHours = 12 * 60 * 60; // 12 hours in seconds
+            var display = document.querySelector('#time');
+            startCountdown(twelveHours, display);
+        };
+    </script>
+</body>
+</html>

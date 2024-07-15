@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="description" content="html template">
+      <meta name="author" content="uxdt">
+      <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+      <link rel="icon" href="assets/images/favicon/favicon.png">
+      <title>Home Page</title>
+      <!-- Custom styles for this template -->
+      <link href="assets/css/base.css" rel="stylesheet" media="all">
+      <link href="assets/css/base-responsive.css" rel="stylesheet" media="all">
+      <link href="assets/css/grid.css" rel="stylesheet" media="all">
+      <link href="assets/css/font.css" rel="stylesheet" media="all">
+      <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="all">
+      <link href="assets/css/flexslider.css" rel="stylesheet" media="all">
+      <link href="assets/css/megamenu.css" rel="stylesheet" media="all" />
+      <link href="assets/css/print.css" rel="stylesheet" media="print" />
+      <!-- Theme styles for this template -->
+      <link href="assets/css/megamenu.css" rel="stylesheet" media="all" />
+      <link href="theme/css/site.css" rel="stylesheet" media="all">
+      <link href="theme/css/site-responsive.css" rel="stylesheet" media="all">
+      <link href="theme/css/ma5gallery.css" rel="stylesheet" type="text/css">
+      <link href="theme/css/print.css" rel="stylesheet" type="text/css" media="print">
+      <style>
+         body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.parallel{
+   padding-top: 70px;
+   padding-bottom: 50px;
+   margin-top: 150px;
+}
+.genz-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.genz-background-image {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.genz-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+}
+.genz-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.genz-left button {
+background-color: black;
+color: white;
+font-size: 1.2em; /* Adjust the size as needed */
+padding: 10px 20px; /* Adjust the padding as needed */
+border: none;
+cursor: pointer;
+display: block; /* Ensures the button is treated as a block element */ /* Adjust the space between the paragraph and the button as needed */
+}
+.genz-left h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    color: #ffc90e;
+}
+.genz-left p {
+    margin-top: 580px;
+    font-weight: 700;
+    font-size: 30px;
+    color: black
+}
+.genz-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.genz-right .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.genz-right .image-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.genz-right .image-container img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.genz-right .image-container p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+         </style>
+      <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+      <![endif]-->
+      <!-- Custom JS for this template -->
+      <noscript>
+         <link href="theme/css/no-js.css" type="text/css" rel="stylesheet">
+      </noscript>
+   </head>
+   <body>
+      <div id="fb-root"></div>
+      <header>
+         <div class="region region-header-top">
+            <div id="block-cmf-content-header-region-block" class="block block-cmf-content first last odd">
+               <noscript class="no_scr">"JzavaScript is a standard programming language that is included to provide interactive features, Kindly enable Javascript in your browser. For details visit help page"
+               </noscript>
+               <div class="wrapper common-wrapper">
+                  <div class="container common-container four_content top-header">
+                     <div class="common-left clearfix">
+                        <ul>
+                           <li class="gov-india"><span class="responsive_go_hindi" lang="hi"><a target="_blank" href="https://india.gov.in/hi" title="भारत सरकार ( बाहरी वेबसाइट जो एक नई विंडो में खुलती है)">Online Fashion Store</a></span>                           </li>
+                           <li class="ministry"><span class="li_eng responsive_go_eng"><a target="_blank" href="https://india.gov.in/" title="Government of india,External Link that opens in a new window" >3188994 items</a></span></li>
+                        </ul>
+                     </div>
+                     <div class="common-right clearfix">
+                        <ul id="header-nav">
+                           <li class="ico-skip cf"><a href="#skipCont" title=""> <div id="offer-timer">Sale Ends In <span id="time">12:47:10</span></div></a>
+                           </li>
+                           <li class="ico-site-search cf">
+                              <a href="javascript:void(0);" id="toggleSearch" title="Site Search">
+                              <img class="top" src="assets/images/ico-site-search.png" alt="Site Search" /></a>
+                              <div class="search-drop both-search">
+                                 <div class="google-find">
+                                    <form method="get" action="http://www.google.com/search" target="_blank">
+                                       <label for="search_key_g" class="notdisplay">Search</label>
+                                       <input type="text" name="q" value="" id="search_key_g"/> 
+                                       <input type="submit" value="Search" class="submit" /> 
+                                       <div class="">
+                                          <input type="radio" name="sitesearch" value="" id="the_web"/> 
+                                          <label for="the_web">The Web</label> 
+                                          <input type="radio" name="sitesearch" value="india.gov.in" checked id="the_domain"/> <label for="the_domain"> INDIA.GOV.IN</label>
+                                       </div>
+                                    </form>
+                                 </div>
+                                 <div class="find">
+                                    <form name="searchForm">
+                                       <label for="search_key" class="notdisplay">Search</label>
+                                       <input type="text" name="search_key" id="search_key" onKeyUp="autoComplete()" autocomplete="off" required />
+                                       <input type="submit" value="Search" class="bttn-search"/>
+                                    </form>
+                                    <div id="auto_suggesion"></div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="ico-accessibility cf">
+                              <a href="javascript:void(0);" id="toggleAccessibility" title="Accessibility Dropdown">
+                              <img class="top" src="assets/images/ico-accessibility.png" alt="Accessibility Dropdown" />
+                              </a>
+                              <ul style="visibility: hidden;">
+                                 <li> <a onClick="set_font_size('increase')" title="Increase font size" href="javascript:void(0);">A<sup>+</sup>
+                                    </a> 
+                                 </li>
+                                 <li> <a onClick="set_font_size()" title="Reset font size" href="javascript:void(0);">A<sup>&nbsp;</sup></a> </li>
+                                 <li> <a onClick="set_font_size('increase')" title="Decrease font size" href="javascript:void(0);">A<sup>-</sup></a> </li>
+                                 <li> <a href="javascript:void(0);" class="high-contrast dark" title="High Contrast">A</a> </li>
+                                 <li> <a href="javascript:void(0);" class="high-contrast light" title="Normal Contrast" style="display: none;">A</a> </li>
+                              </ul>
+                           </li>
+                           <li class="ico-social cf">
+                              <a href="javascript:void(0);" id="toggleSocial" title="Social Medias">
+                              <img class="top" src="assets/images/ico-social.png" alt="Social Medias" /></a>
+                              <ul>
+                                 <li><a target="_blank" title="External Link that opens in a new window" href="http://www.facebook.com/"><img alt="Facebook Page" src="assets/images/ico-facebook.png"></a></li>
+                                 <li><a target="_blank" title="External Link that opens in a new window" href="http://www.twitter.com/"><img alt="Twitter Page" src="assets/images/ico-twitter.png"></a></li>
+                                 <li><a target="_blank" title="External Link that opens in a new window" href="http://www.youtube.com/"><img alt="youtube Page" src="assets/images/ico-youtube.png"></a></li>
+                              </ul>
+                           </li>
+                           <li class="ico-sitemap cf"><a href="" title="Sitemap">
+                              <img class="top" src="assets/images/ico-sitemap.png" alt="Sitemap" /></a>
+                           </li>
+                           <li class="hindi cmf_lan d-hide">
+                              <label class="de-lag"><span style="display: none;">Language</span>
+                                 <select title="Select Language">
+                                    <option>English</option>
+                                    <option>हिन्दी</option>
+                                 </select>
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>                     
+            <p id="scroll" style="display: none;"><span></span></p>
+         </div>
+         <!--Top-Header Section end-->
+         <section class="wrapper header-wrapper">
+            <h1 style="display:none;">header</h1>
+            <div class="container common-container four_content  header-container">
+               <h2 class="logo">
+                  <a href="home.html" title="Home" rel="home" class="header__logo" id="logo">
+                     <img class="national_emblem" src="assets/images/unnamed.jpg" alt="Myntra logo" style="width: 70px; height: 70px;">
+                     <em><span>
+                     </span>                       
+                        <span style="margin-left: -10px; font-size: 12px; margin-top: 26px; font-weight: normal;"> Home/ Online Fashion Store</span>
+                     </em>
+                  </a>
+               </h2>
+               <div class="header-right clearfix" style=" height: 50px; width: 400px; margin-top:0px; margin-bottom: 0px;" >
+                  <div class="common-right clearfix" >
+                     <table style=" padding: 0;">
+                        <tr>
+                        <td>
+                        
+                           <a href="javascript:void(0);" id="toggleAccessibility" title="Accessibility Dropdown">
+                           <img class="top" src="assets/images/profile.png" alt="Profile" style=" height: 37px; width:40px; "/>
+                           </a>
+                        
+                     </td>
+                     <td>
+                           <a href="wishlist.html" id="toggleSocial" title="Wishlist">
+                           <img class="top" src="assets/images/wishlist.png" alt="Wishlist" style="height: 40px; width:40px; "/></a>
+                     </td>
+                     <td>
+                           <a href="bag2.html" id="toggleBag" title="Bag">
+                           <img class="top" src="assets/images/bag.png" alt="Bag" style="height: 40px; width:40px;"/></a>
+                     </td>
+                  </tr>
+                  </table>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--/.header-wrapper-->
+         <section class="wrapper megamenu-wraper" style="margin-top: 0px; background-color: #ff659e;">
+            <h3 style="display: none;" style="background-color: #ff659e;">megamenu</h3>
+            <div class="container common-container four_content" style="background-color: #ff659e;">
+               <p class="showhide"><em></em><em></em><em></em></p>
+               <nav class="main-menu clearfix" id="main_menu" style="background-color: #ff659e;">
+                  <ul class="nav-menu">
+                    <li class="nav-item"> <a href="#" class="home"><i class="fa fa-home"></i></a> </li>            
+                    <li class="nav-item"> <a href="inner.html">Men</a>
+                      <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                          <li><a href="inner.html">Top Wear </a></li>
+                          <li><a href="Mission.html">Bottom Wear </a></li>
+                          <li><a href="inner.html">Indian and Festive Wear </a></li>
+                          <li><a href="inner.html">Inner Wear and Sleep Wear</a></li>
+                          <li><a href="inner.html">PlusSize </a></li>
+                          <li><a href="inner.html">Footwear</a></li>
+                          <li><a href="objective.html">Active Wear</a></li>
+                          <li><a href="inner.html">Watches</a></li>
+                        </ul>            
+                      </div>
+                    </li>
+            
+                    <li class="nav-item"> <a href="inner.html">  Women </a>
+                      <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                          <li><a href="inner.html">Indian and Fusion Wear</a></li>
+                          <li><a href="inner.html">Western Wear</a></li>
+                          <li><a href="inner.html">Lingerie and Sleepwear</a></li>
+                          <li><a href="inner.html">Plus Size</a></li>
+                        </ul>
+                      </div>
+                    </li>
+            
+                    <li class="nav-item"><a href="inner.html"> Kids</a>
+                      <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                          <li><a href="inner.html">Boys Clothing</a></li>
+                          <li><a href="inner.html">Girls Clothing</a></li>
+                          <li><a href="inner.html">Footwear</a></li>
+                          <li><a href="inner.html">Toys and Games</a></li>
+                          <li><a href="inner.html">Infants</a></li>
+                          <li><a href="inner.html">Kids Accessories</a></li>
+                          <li><a href="inner.html">Personal Care</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    
+                    <li class="nav-item"><a href="inner.html">Home & Living</a>
+                       <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                          <li><a href="inner.html">Bed Linen and Furnishing</a></li>
+                          <li><a href="inner.html">Bath</a></li>
+                          <li><a href="inner.html">Flooring</a></li>
+                          <li><a href="inner.html">Lamps and Lighting</a></li>
+                          <li><a href="inner.html">Home Decor</a></li>
+                          <li><a href="inner.html">Kitchen and Table</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    
+                    <li class="nav-item"><a href="inner.html">Beauty</a>
+                      <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                          <li><a href="inner.html">Makeup</a></li>
+                          <li><a href="inner.html">Skincare, Bath and Body</a></li>
+                          <li><a href="inner.html">Haircare</a></li>
+                          <li><a href="inner.html">Fragrances</a></li>
+                          <li><a href="inner.html">Appliances</a></li>
+                          <li><a href="inner.html">Men's Grooming</a></li>
+                        </ul>
+                      </div>
+                    </li>
+            
+                    <li class="nav-item"><a href="inner.html">Studio</a></li>
+            
+                    <li class="nav-item"><a href="trend.html">TrendNXT</a></li>
+            
+                    <li class="nav-item"><a href="index.html">SwipeFIT</a></li>
+                    
+            
+                    <li class="nav-item"><a href="inner.html">Grievance</a></li>
+                                 
+                    <li class="nav-item">
+                      <a href="inner.html">Parliament Q & A</a>
+                      <div class="sub-nav col-1">
+                         <ul class="sub-nav-group ">
+                            <li><a href="inner.html">Lok Sabha</a></li>
+                            <li><a href="inner.html">Rajya Sabha</a></li>
+                         </ul>
+                      </div>
+                    </li>
+                   
+                    <li class="nav-item"><a href="inner.html">Important Links</a></li>
+            
+                    <li class="nav-item"><a href="inner.html">Contact Us</a></li>
+            
+                  </ul>
+               </nav>
+               <nav class="main-menu clearfix" id="overflow_menu">
+                  <ul class="nav-menu clearfix">
+                  </ul>
+               </nav>
+            </div>
+         </section>
+      </header>
+      <!--/.nav-wrapper-->
+      <section class="wrapper banner-wrapper" style="max-height: 550px; width: auto;">
+         <h3 style="display: none;">banner</h3>
+         <div id="flexSlider" class="flexslider">
+            <ul class="slides">
+               <li><img src="theme/images/banner2.webp" alt="banner1" ></li>
+               <li><img src="theme/images/banner3.png" alt="banner2"></li>
+               <li><img src="theme/images/banner4.jpg" alt="banner3"></li>
+               <li><img src="theme/images/banner1.jpg" alt="banner4"></li>
+            </ul>
+         </div>
+      </section>
+      <section class="parallel">
+      <div class="wrapper" id="skipCont" ><img src="assets/images/tre_banner2.png" style="margin-top: 30px;"></div></section>
+      <!--/#skipCont-->
+      <section class="important-link">
+         <div class="container carousel-container" >
+            <h2>SHOP BY BRANDS</h2>
+            <div id="impt-link-Carousel" class="flexslider carousel " >
+               <ul class="slides" style="max-height: 70px;">
+                  <li><a target="_blank" href="#" title="logo 1">
+                     <img src="assets/images/m1.JPG" alt="img 1"></a>
+                  </li>
+                  <li><a target="_blank" href="#" title="logo 2">
+                     <img src="assets/images/m2.JPG" alt="img 2"></a>
+                  </li>
+                  <li><a target="_blank" href="#" title="logo 3">
+                     <img src="assets/images/1b.JPG" alt="img 3"></a>
+                  </li>
+                  <li><a target="_blank" href="#" title="logo 4">
+                     <img src="assets/images/m4.JPG" alt="img 4"></a>
+                  </li>
+                  <li><a target="_blank" href="#" title="logo 5">
+                     <img src="assets/images/m3.JPG" alt="img 5"></a>
+                  </li>
+                  <li><a target="_blank" href="#" title="logo 6">
+                     <img src="assets/images/2b.JPG" alt="img 6"></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!--/.body-wrapper-->
+      <!--/.banner-wrapper-->
+      <!--/.carousel-wrapper-->
+      <footer class="wrapper footer-wrapper">
+         <div class="footer-top-wrapper">
+            <div class="container common-container four_content footer-top-container">
+               <ul>
+                  <li><a href="inner.html">Feedback</a></li>
+                  <li><a href="inner.html">Website policies</a></li>
+                  <li><a href="inner.html">Terms and Conditions </a></li>
+                  <li><a href="inner.html">Contact Us</a></li>
+                  <li><a href="inner.html">Help</a></li>
+                  <li><a href="inner.html">Web Information Manager</a></li>
+                  <li><a href="inner.html">Abbreviations</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-bottom-wrapper">
+            <div class="container common-container four_content footer-bottom-container">
+               <div class="footer-content clearfix">
+                  <div class="copyright-content"> <span>Designed, Developed and Hosted by 
+                     <strong>Myntra</strong></a><strong></strong></span> 
+                  </div>
+                  <div class="last-updated">
+                     <strong>Last Updated: DD-MM-YYYY</strong>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--/.footer-wrapper-->
+      <!-- jQuery v1.11.1 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha512-nhY06wKras39lb9lRO76J4397CH1XpRSLfLJSftTeo3+q2vP7PaebILH9TqH+GRpnOhfAGjuYMVmVTOZJ+682w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- jQuery Migration v1.4.1 -->
+      <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+      <!-- jQuery v3.6.0 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- jQuery Migration v3.4.0 -->
+      <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+
+      <script src="assets/js/jquery-accessibleMegaMenu.js"></script>
+      <script src="assets/js/framework.js"></script>
+      <script src="assets/js/jquery.flexslider.js"></script>
+      <script src="assets/js/font-size.js"></script>
+      <script src="assets/js/swithcer.js"></script>
+      <script src="theme/js/ma5gallery.js"></script>
+      <script src="assets/js/megamenu.js"></script>
+      <script src="theme/js/easyResponsiveTabs.js"></script>
+      <script src="theme/js/custom.js"></script>
+      <script>
+         // Countdown timer
+         function startCountdown(duration, display) {
+             var timer = duration, hours, minutes, seconds;
+             setInterval(function () {
+                 hours = parseInt(timer / 3600, 10);
+                 minutes = parseInt((timer % 3600) / 60, 10);
+                 seconds = parseInt(timer % 60, 10);
+ 
+                 hours = hours < 10 ? "0" + hours : hours;
+                 minutes = minutes < 10 ? "0" + minutes : minutes;
+                 seconds = seconds < 10 ? "0" + seconds : seconds;
+ 
+                 display.textContent = hours + ":" + minutes + ":" + seconds;
+ 
+                 if (--timer < 0) {
+                     timer = duration;
+                 }
+             }, 1000);
+         }
+ 
+         window.onload = function () {
+             var twelveHours = 12 * 60 * 60; // 12 hours in seconds
+             var display = document.querySelector('#time');
+             startCountdown(twelveHours, display);
+         };
+     </script>
+   </body>
+</html>
